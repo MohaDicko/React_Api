@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-
-function UserList() {
+const UserList = () => {
   const [listOfUSers, setlistOfUSers] = useState([]);
 
   useEffect(() => {
@@ -17,7 +16,7 @@ function UserList() {
   return (
     <div>
       <>
-        <table>
+        <table style={{ border: "1px solid black", color: "blue" }}>
           <thead>
             <tr>
               <th>name</th>
@@ -40,6 +39,6 @@ function UserList() {
       </>
     </div>
   );
-}
+};
 
 export default UserList;
